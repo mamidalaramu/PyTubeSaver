@@ -1,6 +1,6 @@
 # Define the update_download_status function
 def update_download_status(message, label):
-    if message == "Download Complete":
+    if message == "Download Complete!":
         text_color = "green"
     else:
         text_color = "red"
