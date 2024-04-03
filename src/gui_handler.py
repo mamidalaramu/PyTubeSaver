@@ -1,4 +1,3 @@
-# Define the update_download_status function
 def update_download_status(message, label):
     if message == "Download Complete!":
         text_color = "green"
@@ -7,14 +6,12 @@ def update_download_status(message, label):
     label.configure(text=message, text_color=text_color)
 
 
-# Define the update_progress_bar function
 def update_progress_bar(percentage, progress_percentage_label, progress_bar):
     progress_percentage_label.configure(text=f"{percentage}%")
     progress_percentage_label.update()
     progress_bar.set(float(percentage) / 100)
 
 
-# Define the update_display_details function
 def update_display_details(
     title,
     length_min,
